@@ -5,12 +5,12 @@ import App from './App'
 import router from './router'
 import store from './store'
 import { sync } from 'vuex-router-sync'
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.min.css'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
 sync(store, router)
 
-Vue.use(VueMaterial)
+Vue.use(Vuetify)
 
 Vue.config.productionTip = false
 
