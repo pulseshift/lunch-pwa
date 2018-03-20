@@ -22,6 +22,6 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 ## References
 + [Vue.js 2 Documentation](https://vuejs.org/v2/guide/)
-+ [Vue Material Documentation](https://vuematerial.io)
++ [Vuetify](https://vuetifyjs.com/en/)
 + [Vuex Documentation](https://vuex.vuejs.org/en/installation.html)
 + [vuex-router-sync](https://github.com/vuejs/vuex-router-sync) 
