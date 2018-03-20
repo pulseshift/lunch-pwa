@@ -6,11 +6,13 @@ import router from './router'
 import store from './store'
 import { sync } from 'vuex-router-sync'
 import Vuetify from 'vuetify'
+import lodash from 'lodash'
 import 'vuetify/dist/vuetify.min.css'
 
 sync(store, router)
 
 Vue.use(Vuetify)
+Object.defineProperty(Vue.prototype, '$lodash', { value: lodash })
 
 Vue.config.productionTip = false
 

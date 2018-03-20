@@ -4,9 +4,7 @@
             
         </v-toolbar>
         <v-content>
-            <v-container fluid>
-                <LunchList />
-            </v-container>
+            <LunchList />
         </v-content>
         <v-bottom-nav app absolute :value="true" color="transparent">
             <v-btn flat>
