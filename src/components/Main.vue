@@ -6,7 +6,7 @@
         <v-content>
             <LunchList />
         </v-content>
-        <v-bottom-nav app absolute :value="true" color="transparent">
+        <v-bottom-nav app :value="true" color="transparent">
             <v-btn flat>
                 <span>Mo</span>
             </v-btn>
@@ -38,5 +38,7 @@ export default {
 </script>
 
 <style scoped>
-
+.content {
+    max-height: 100vh;
+}
 </style>
