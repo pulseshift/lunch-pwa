@@ -2,7 +2,7 @@
     <div class="scroll-container">     
         <v-container fluid grid-list-sm>
             <v-layout row wrap justify-center align-center>
-                <Lunch ref="lunch" v-for="menu in orderedMenus" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
+                <Lunch ref="lunch" v-for="menu in orderedMenusForDay" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
             </v-layout>
         </v-container>
     </div>
@@ -15,7 +15,7 @@ export default {
     name: 'LunchList',
     components: { Lunch },
     computed: {
-        orderedMenus () {
+        orderedMenusForDay () {
             return this.$store.getters.getMenuForDay('190193118712')
         }
     },
