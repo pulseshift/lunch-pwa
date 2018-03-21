@@ -1,6 +1,6 @@
 <template>
     <v-flex d-flex xs12>
-        <v-card hover light>
+        <v-card hover light @click.native="show = !show">
             <v-container fluid grid-list-lg>
                 <v-layout row>
                     <v-flex xs2>
@@ -22,6 +22,46 @@
                         </div>
                     </v-flex>
                 </v-layout>
+                <div v-show="show">
+                    <v-layout row>
+                        <v-flex xs12>
+                            <div class="subheading center-text" >
+                                Enthält Allergene
+                            </div>
+                        </v-flex>
+                    </v-layout>
+                    <v-layout v-for="allergy in menu.allergies" :key="allergy.descr" row>
+                        <v-flex xs2>
+                            <div class="body-2 center-text">
+                                {{ allergy.type }}
+                            </div>
+                        </v-flex>
+                        <v-flex xs10>
+                            <div class="body-1">
+                                {{ allergy.descr }}
+                            </div>
+                        </v-flex>
+                    </v-layout>
+                    <v-layout row>
+                        <v-flex xs12>
+                            <div class="subheading center-text" >
+                                Enthält Zusätze
+                            </div>
+                        </v-flex>
+                    </v-layout>
+                    <v-layout v-for="additive in menu.additives" :key="additive.descr" row>
+                        <v-flex xs2>
+                            <div class="body-2 center-text">
+                                {{ additive.type }}
+                            </div>
+                        </v-flex>
+                        <v-flex xs10>
+                            <div class="body-1">
+                                {{ additive.descr }}
+                            </div>
+                        </v-flex>
+                    </v-layout>
+                </div>
             </v-container>
         </v-card>
     </v-flex>
@@ -35,12 +75,19 @@ export default {
         imgSrc () {
             return '/static/lunch-icons/' + this.menu.img + '.png'
         }
-    }
+    },
+    data: () => ({
+        show: false
+    })
 }
 </script>
 
 <style scoped>
 .price-tag {
     float: right;
+}
+
+.center-text {
+    text-align: center
 }
 </style>
