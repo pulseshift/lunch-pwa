@@ -1,5 +1,5 @@
-//Daten für Montag 19.03 bis Dienstag 27.03 inklusive Samstagsmenü
-//Samstag nur mit Beilage und einem Mittagsmenü
+// Daten für Montag 19.03 bis Dienstag 27.03 inklusive Samstagsmenü
+// Samstag nur mit Beilage und einem Mittagsmenü
 
 export const state = {
     days: {
@@ -13,7 +13,7 @@ export const state = {
                 allergies: [
                     {
                         descr: 'Gluten',
-                        type: 'G' 
+                        type: 'G'
                     },
                     {
                         descr: 'Milch inkl. Laktose',
@@ -31,12 +31,11 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' //da viel Arten von Geschmacksverstärkern mit E anfangen
+                        type: 'E' // da viel Arten von Geschmacksverstärkern mit E anfangen
                     }
                 ]
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Rinderschmorbraten an Weißweinsoße mit Beilagensalat',
@@ -45,7 +44,7 @@ export const state = {
                 allergies: [
                     {
                         descr: 'Gluten',
-                        type: 'G' 
+                        type: 'G'
                     },
                     {
                         descr: 'Milch inkl. Laktose',
@@ -67,7 +66,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -98,7 +97,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -117,11 +116,11 @@ export const state = {
                     {
                         descr: 'Milch inkl. Laktose',
                         type: 'L'
-                    }, 
+                    },
                     {
                         descr: 'Eier',
                         type: 'I'
-                    }, 
+                    },
                     {
                         descr: 'Nüsse',
                         type: 'N'
@@ -130,7 +129,7 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             }
@@ -150,7 +149,7 @@ export const state = {
                     {
                         descr: 'Milch inkl. Laktose',
                         type: 'L'
-                    }, 
+                    },
                     {
                         descr: 'Eier',
                         type: 'I'
@@ -164,7 +163,6 @@ export const state = {
                 ]
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Schweineschnitzel Jägermeisterart',
@@ -183,7 +181,7 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -201,7 +199,7 @@ export const state = {
                     {
                         descr: 'Milch inkl. Laktose',
                         type: 'L'
-                    }, 
+                    },
                     {
                         descr: 'Selerie',
                         type: 'R'
@@ -214,7 +212,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -259,12 +257,11 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Putenoberkeulenbraten mit Rosmarinjus',
@@ -278,7 +275,7 @@ export const state = {
                     {
                         descr: 'Schwefeldioxid und Sulfite',
                         type: 'S'
-                    }, 
+                    },
                     {
                         descr: 'Selerie',
                         type: 'R'
@@ -291,7 +288,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -305,7 +302,7 @@ export const state = {
                     {
                         descr: 'Gluten',
                         type: 'G'
-                    }, 
+                    },
                     {
                         descr: 'Selerie',
                         type: 'R'
@@ -350,7 +347,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             }
@@ -362,15 +359,10 @@ export const state = {
                 title: 'Dampfkartoffeln',
                 img: 'side',
                 price: '1.80',
-                allergies: [
-                    
-                ],
-                additives: [
-                    
-                ]
+                allergies: [],
+                additives: []
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Grünkohl mit Mettenden von Schwein und Rind',
@@ -393,7 +385,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -432,7 +424,7 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             }
@@ -453,12 +445,11 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Gegrillte Putenstreifen auf buntem Blattsalat mit gerösteten Walnüssen',
@@ -477,7 +468,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -504,7 +495,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -528,7 +519,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             }
@@ -557,12 +548,11 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Spagetthi Aioli',
@@ -581,10 +571,10 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
-            },
+            }
         ],
         '190193118718': [
             {
@@ -596,7 +586,7 @@ export const state = {
                 allergies: [
                     {
                         descr: 'Gluten',
-                        type: 'G' 
+                        type: 'G'
                     },
                     {
                         descr: 'Milch inkl. Laktose',
@@ -614,12 +604,11 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Rinderfirkadelle mit Zwiebelsoße',
@@ -628,7 +617,7 @@ export const state = {
                 allergies: [
                     {
                         descr: 'Gluten',
-                        type: 'G' 
+                        type: 'G'
                     },
                     {
                         descr: 'Schwefeldioxid und Sulfite',
@@ -642,7 +631,7 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -655,7 +644,7 @@ export const state = {
                 allergies: [
                     {
                         descr: 'Gluten',
-                        type: 'G' 
+                        type: 'G'
                     },
                     {
                         descr: 'Milch inkl. Laktose',
@@ -669,7 +658,7 @@ export const state = {
                 additives: [
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -697,7 +686,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             }
@@ -709,15 +698,10 @@ export const state = {
                 title: 'Basmatireis',
                 img: 'side',
                 price: '1.70',
-                allergies: [
-                    
-                ],
-                additives: [
-                    
-                ]
+                allergies: [],
+                additives: []
             },
             {
-                
                 rank: 2,
                 loc: 'Mittag Menü',
                 title: 'Hähnchenschenkel in Rotweinsauce mit Perlzwiebeln und Champignons',
@@ -726,7 +710,7 @@ export const state = {
                 allergies: [
                     {
                         descr: 'Gluten',
-                        type: 'G' 
+                        type: 'G'
                     },
                     {
                         descr: 'Selerie',
@@ -744,7 +728,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             },
@@ -754,9 +738,7 @@ export const state = {
                 title: 'Veganer Brokkoli-Dinkel-Auflauf mit Tomatensauce ',
                 img: 'main-dish',
                 price: '4.20',
-                allergies: [
-                    
-                ],
+                allergies: [],
                 additives: [
                     {
                         descr: 'Künstliche Farbstoffe',
@@ -774,7 +756,7 @@ export const state = {
                 allergies: [
                     {
                         descr: 'Gluten',
-                        type: 'G' 
+                        type: 'G'
                     },
                     {
                         descr: 'Milch inkl. Laktose',
@@ -792,7 +774,7 @@ export const state = {
                     },
                     {
                         descr: 'Geschmacksverstärker',
-                        type: 'E' 
+                        type: 'E'
                     }
                 ]
             }
