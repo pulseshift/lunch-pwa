@@ -16,7 +16,7 @@ export default {
     components: { Lunch },
     computed: {
         orderedMenus () {
-            return this.$lodash.orderBy(this.$store.state.days['190193118712'], 'rank')
+            return this.$store.getters.getMenuForDay('190193118712')
         }
     },
     methods: {
