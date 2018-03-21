@@ -1,6 +1,6 @@
 <template>
     <v-flex d-flex xs12>
-        <v-card hover light @click.native="show = !show">
+        <v-card hover light @click.native="onClick">
             <v-container fluid grid-list-lg>
                 <v-layout row>
                     <v-flex xs2>
@@ -70,7 +70,7 @@
 <script>
 export default {
     name: 'Lunch',
-    props: ['menu'],
+    props: ['menu', 'closeOther'],
     computed: {
         imgSrc () {
             return '/static/lunch-icons/' + this.menu.img + '.png'
@@ -78,7 +78,13 @@ export default {
     },
     data: () => ({
         show: false
-    })
+    }),
+    methods: {
+        onClick () {
+            this.show = !this.show
+            this.closeOther(this)
+        }
+    }
 }
 </script>
 

@@ -2,7 +2,7 @@
     <div class="scroll-container">     
         <v-container fluid grid-list-sm>
             <v-layout row wrap justify-center align-center>
-                <Lunch v-for="menu in orderedMenus" v-bind:key="menu.id" :menu="menu" />
+                <Lunch ref="lunch" v-for="menu in orderedMenus" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
             </v-layout>
         </v-container>
     </div>
@@ -17,6 +17,16 @@ export default {
     computed: {
         orderedMenus () {
             return this.$lodash.orderBy(this.$store.state.days['190193118712'], 'rank')
+        }
+    },
+    methods: {
+        closeOther: function (component) {
+            for (let ref in this.$refs.lunch) {
+                const child = this.$refs.lunch[ref]
+                if (child !== component) {
+                    child.show = false
+                }
+            }
         }
     }
 }
