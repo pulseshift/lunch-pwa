@@ -94,10 +94,10 @@
         fabPushElement.checked = status
         if (status) {
             fabPushElement.classList.add('active')
-            fabPushImgElement.src = '../static/img/icons/push-on.png'
+            fabPushImgElement.src = '../static/img/push/on.png'
         } else {
             fabPushElement.classList.remove('active')
-            fabPushImgElement.src = '../static/img/icons//images/push-off.png'
+            fabPushImgElement.src = '../static/img/push/off.png'
         }
     }
     // Click event for subscribe push
