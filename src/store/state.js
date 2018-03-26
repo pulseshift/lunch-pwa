@@ -2,8 +2,8 @@
 // Samstag nur mit Beilage und einem Mittagsmenü
 
 export const state = {
-    cantines: {
-        'cantine-01': {
+    cantines: [
+        {
             'title': 'Hauptkantine',
             'days': {
                 '17610': {
@@ -808,7 +808,7 @@ export const state = {
                 }
             }
         },
-        'cantine-02': {
+        {
             'title': 'Kantine Werk 7',
             'days': {
                 '17610': {
@@ -1613,7 +1613,7 @@ export const state = {
                 }
             }
         },
-        'cantine-03': {
+        {
             'title': 'Kantine Werk 22',
             'days': {
                 '17610': {
@@ -2418,5 +2418,5 @@ export const state = {
                 }
             }
         }
-    }
+    ]
 }

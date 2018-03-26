@@ -1,13 +1,27 @@
 <template>
     <v-app>
-        <v-toolbar app>
-            
+        <v-toolbar app color="teal">
+            <v-layout wrap>
+                 <v-flex xs8 offset-xs2>
+                    <div class="center-me">
+                        <v-select
+                        :items="cantines"
+                        v-model="cantine"
+                        item-text="title"
+                        single-line
+                        label="Kantine"    
+                        dark                    
+                        ></v-select>
+                    </div>
+                 </v-flex>
+            </v-layout>
+
         </v-toolbar>
         <v-content>
-            <LunchList />
+            <LunchList v-bind:cantine="cantine" v-bind:day="day" />
         </v-content>
-        <v-bottom-nav app :value="true" color="transparent">
-            <v-btn v-for="day in days" :key="day" flat>
+        <v-bottom-nav app :value="true" color="teal" :active.sync="day">
+            <v-btn dark v-for="day in days" :key="day" flat :value="day">
                 <span>{{ getDay(day) }}</span>
             </v-btn>
         </v-bottom-nav> 
@@ -22,21 +36,32 @@ import SurveyBanner from './SurveyBanner'
 export default {
     name: 'Main',
     components: { LunchList, ShareBanner, SurveyBanner },
+    data: function () {
+        return {
+            cantine: undefined,
+            day: 17610
+        }
+    },
+    mounted () {
+        this.cantine = this.cantines[0]
+    },
     computed: {
         days (startDate) {
             // Just for testing
-            const firstDate = 190193118712
+            const firstDate = 17611
             let days = []
             for (let i = 0; i < 5; i++) {
                 let date = firstDate + i
                 days.push(date)
             }
             return days
+        },
+        cantines () {
+            return this.$store.getters.getCantines()
         }
     },
     methods: {
         getDay (timestampDay) {
-            console.log(Math.floor(Date.now() / 1000 / 60 / 60 / 24))
             const timestamp = timestampDay * 1000 * 60 * 60 * 24
             const day = new Date(timestamp).getDay()
             switch (day) {
@@ -65,5 +90,9 @@ export default {
 <style scoped>
 .content {
     max-height: 100vh;
+}
+
+.center-me {
+  margin: 0 auto;
 }
 </style>

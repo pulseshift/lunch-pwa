@@ -1,8 +1,8 @@
 <template>   
-    <div class="scroll-container">     
+    <div class="scroll-container" v-show="!isEmtpy">     
         <v-container fluid grid-list-sm>
             <v-layout row wrap justify-center align-center>
-                <Lunch ref="lunch" v-for="menu in orderedMenusForDay" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
+                <Lunch ref="lunch" v-for="menu in getMenu" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
             </v-layout>
         </v-container>
     </div>
@@ -14,9 +14,36 @@ import Lunch from './Lunch'
 export default {
     name: 'LunchList',
     components: { Lunch },
+    props: ['cantine', 'day'],
+    watch: {
+        day: function () {
+            this.closeOther(null)
+        },
+        cantine: function () {
+            this.closeOther(null)
+        }
+    },
     computed: {
-        orderedMenusForDay () {
-            return this.$store.getters.getMenuForDay('190193118712')
+        isEmtpy () {
+            if (this.cantine !== undefined && this.day !== undefined) {
+                return false
+            } else {
+                return true
+            }
+        },
+        getMenu () {
+            if (this.cantine !== undefined && this.day !== undefined) {
+                return this.cantine.days[this.day].menu
+            } else {
+                return null
+            }
+        },
+        getOpeningTimes () {
+            if (this.cantine !== undefined && this.day !== undefined) {
+                return this.cantine.days[this.day].openingtimes
+            } else {
+                return null
+            }
         }
     },
     methods: {
