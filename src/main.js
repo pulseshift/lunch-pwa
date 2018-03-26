@@ -7,6 +7,8 @@ import store from './store'
 import { sync } from 'vuex-router-sync'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+// import Vuefire from 'vuefire'
+// Vue.use(Vuefire)
 
 sync(store, router)
 
