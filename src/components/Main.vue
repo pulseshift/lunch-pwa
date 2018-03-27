@@ -66,19 +66,19 @@ export default {
             const day = new Date(timestamp).getDay()
             switch (day) {
             case 0:
-                return 'Mo'
-            case 1:
-                return 'Di'
-            case 2:
-                return 'Mi'
-            case 3:
-                return 'Do'
-            case 4:
-                return 'Fr'
-            case 5:
-                return 'Sa'
-            case 6:
                 return 'So'
+            case 1:
+                return 'Mo'
+            case 2:
+                return 'Di'
+            case 3:
+                return 'Mi'
+            case 4:
+                return 'Do'
+            case 5:
+                return 'Fr'
+            case 6:
+                return 'Sa'
             default:
                 return ''
             }
