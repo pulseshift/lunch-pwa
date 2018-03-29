@@ -94,10 +94,10 @@
         fabPushElement.checked = status
         if (status) {
             fabPushElement.classList.add('active')
-            fabPushImgElement.src = '../static/img/push/on.png'
+            fabPushImgElement.src = '../img/on.png'
         } else {
             fabPushElement.classList.remove('active')
-            fabPushImgElement.src = '../static/img/push/off.png'
+            fabPushImgElement.src = '../img/off.png'
         }
     }
     // Click event for subscribe push
@@ -111,3 +111,12 @@
     })
     isPushSupported() // Check for push notification support
 })(window)
+
+// export const unsubscribe = function (){
+// mounted in App Vue doku anschauen
+// import in der main.js
+// conditional rendering v-if
+// }
+
+// bisherige Nachfrage ob schon aboniert wenn nein nachfragen und obs überhaupt möglich ist
+// wie Push Notifications senden

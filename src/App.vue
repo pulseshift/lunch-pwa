@@ -3,8 +3,13 @@
 </template>
 
 <script>
+// import {unsubscribe, subscribe} from './notificationService/'
+
 export default {
-    name: 'app'
+    name: 'app',
+    mounted () {
+        console.log('bla')
+    }
 }
 </script>
 
