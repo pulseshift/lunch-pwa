@@ -12,6 +12,9 @@ import 'vuetify/dist/vuetify.min.css'
 
 sync(store, router)
 
+var SocialSharing = require('vue-social-sharing')
+Vue.use(SocialSharing)
+
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false

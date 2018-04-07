@@ -1,6 +1,8 @@
 <template>   
     <div class="scroll-container" v-show="!isEmtpy">     
         <v-container fluid grid-list-sm>
+            <SurveyBanner />  
+            <ShareBanner />
             <v-layout row wrap justify-center align-center>
                 <Lunch ref="lunch" v-for="menu in getMenu" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
             </v-layout>
@@ -10,10 +12,12 @@
 
 <script>
 import Lunch from './Lunch'
+import SurveyBanner from './SurveyBanner'
+import ShareBanner from './ShareBanner'
 
 export default {
     name: 'LunchList',
-    components: { Lunch },
+    components: { Lunch, SurveyBanner, ShareBanner },
     props: ['cantine', 'day'],
     watch: {
         day: function () {
