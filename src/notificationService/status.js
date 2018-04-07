@@ -15,7 +15,6 @@ export const isPushSupported = function () {
         .then(function (registration) {
             registration.pushManager.getSubscription()
                 .then(function (subscription) {
-                // If already access granted, enable push button status
                     if (subscription) {
                         // changePushStatus(true)
                     } else {
@@ -26,4 +25,8 @@ export const isPushSupported = function () {
                     console.error('Error occurred while enabling push ', error)
                 })
         })
+}
+
+export const changePushStatus = function (status) {
+    // Changing the global variable status to true if push is supported and allowed
 }

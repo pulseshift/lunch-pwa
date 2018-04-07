@@ -1,3 +1,6 @@
+
+const request = require('request-promise')
+
 var isPushEnabled
 
 export const checkSWavailable = function () {
@@ -23,7 +26,7 @@ export const initialiseState = function () {
         return
     }
     navigator.serviceWorker.ready.then(function (serviceWorkerRegistration) {
-        // Do we already have a push message subscription?
+        // check if we already have a subscription
         serviceWorkerRegistration.pushManager.getSubscription()
             .then(function (subscription) {
                 if (!subscription) {
@@ -57,8 +60,36 @@ export const subscribe = function () {
 
 export const sendSubscriptionToServer = function (sub) {
     if (isPushEnabled) {
+        // connection to firebase
         console.log(sub)
     }
+}
+
+// two different methodes necessary one for google one for firefox
+export const notifyGoogleUser = function (id) {
+    const google = require('./google-push-key.json')
+    const options = {
+        uri: 'https://android.googleapis.com/gcm/send',
+        method: 'POST',
+        json: true,
+        headers: {
+            authorization: `key=${google.key}`
+        },
+        resolveWithFullResponse: true,
+        body: id
+    }
+    return request(options)
+}
+
+export const notifyFirefoxUser = function (userEndpoint) {
+    const options = {
+        method: 'POST',
+        uri: userEndpoint,
+        headers: {
+            ttl: '60'
+        }
+    }
+    return request(options)
 }
 
 /* var fabPushElement = document.querySelector('.fab__push')
@@ -98,4 +129,33 @@ export const changePushStatus = function (status) {
                 console.error('Push notification subscription error: ', error)
             })
     })
+
+    function unsubscribePush () {
+        navigator.serviceWorker.ready
+            .then(function (registration) {
+            // Get `push subscription`
+                registration.pushManager.getSubscription()
+                    .then(function (subscription) {
+                        // If no `push subscription`, then return
+                        if (!subscription) {
+                            alert('Unable to unregister push notification.')
+                            return
+                        }
+                        // Unsubscribe `push notification`
+                        subscription.unsubscribe()
+                            .then(function () {
+                                alert('Unsubscribed successfully.') // vorher toast
+                                console.info('Push notification unsubscribed.')
+                                console.log(subscription)
+                                // deleteSubscriptionID(subscription);
+                                changePushStatus(false)
+                            })
+                            .catch(function (error) {
+                                console.error(error)
+                            })
+                    })
+                    // .catch(function (error) {
+                    //    console.error('Failed to unsubscribe push notification.')
+                    // })
+            })
 } */
