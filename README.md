@@ -2,6 +2,20 @@
 
 > A progressive Web App for Offline-Employees to see their daily lunch.
 
+## How to use notifications
+``` bash
+# build for production with minification
+npm run build
+
+# you need a local http server, if not installed yet use
+npm install -g serve
+
+# run local server
+serve dist
+```
+
+To trigger a notifications, open [this](https://us-central1-lunchapp-e3a2d.cloudfunctions.net/notify) link in your browser (or make a curl request).
+
 ## Build Setup
 
 ``` bash

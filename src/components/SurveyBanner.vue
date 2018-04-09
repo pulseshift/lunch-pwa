@@ -9,7 +9,6 @@
                     </v-flex>
                 </v-layout>
             </v-container>
-            </v-card-media>
             <v-card-title>
                 <div>
                     <span class="red--text">Mach mit!</span><br>

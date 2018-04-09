@@ -5,16 +5,16 @@ import App from './App'
 import router from './router'
 import store from './store'
 import { sync } from 'vuex-router-sync'
+import { database } from './services'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-// import Vuefire from 'vuefire'
-// Vue.use(Vuefire)
+import SocialSharing from 'vue-social-sharing'
+import Vuefire from 'vuefire'
 
 sync(store, router)
 
-var SocialSharing = require('vue-social-sharing')
 Vue.use(SocialSharing)
-
+Vue.use(Vuefire)
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false
@@ -23,6 +23,9 @@ Vue.config.productionTip = false
 const root = new Vue({
     store,
     router,
+    firebase: {
+        subscriptions: database.ref('subscriptions')
+    },
     render: h => h(App)
 })
 

@@ -3,12 +3,22 @@
 </template>
 
 <script>
-// import {unsubscribe, subscribe} from './notificationService/'
+import {subscribe, isSubscribed} from './services'
+import postSubscription from './utils/postSubscription'
 
 export default {
     name: 'app',
+    mixins: [postSubscription],
     mounted () {
-        console.log('bla')
+        isSubscribed()
+            .then(function (isSubscribed) {
+                if (!isSubscribed || Notification.permission !== 'granted') {
+                    subscribe()
+                        .then(function (subscription) {
+                            this.postSubscription(subscription)
+                        }.bind(this))
+                }
+            }.bind(this))
     }
 }
 </script>
