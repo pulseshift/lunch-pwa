@@ -811,119 +811,6 @@ export const state = {
         {
             'title': 'Kantine Werk 7',
             'days': {
-                '17610': {
-                    'openingtime': {
-                        'start': '11:30',
-                        'end': '15:30'
-                    },
-                    'menu': [
-                        {
-                            rank: 1,
-                            loc: 'Beilage',
-                            title: 'Spätzle',
-                            img: 'side',
-                            price: '1.20',
-                            allergies: [
-                                {
-                                    descr: 'Gluten',
-                                    type: 'G'
-                                },
-                                {
-                                    descr: 'Milch inkl. Laktose',
-                                    type: 'L'
-                                },
-                                {
-                                    descr: 'Eier',
-                                    type: 'I'
-                                }
-                            ],
-                            additives: [
-                                {
-                                    descr: 'Künstliche Farbstoffe',
-                                    type: 'K'
-                                }
-                            ]
-                        },
-                        {
-                            rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Schweineschnitzel Jägermeisterart',
-                            img: 'main-dish',
-                            price: '3.80',
-                            allergies: [
-                                {
-                                    descr: 'Gluten',
-                                    type: 'G'
-                                },
-                                {
-                                    descr: 'Milch inkl. Laktose',
-                                    type: 'L'
-                                }
-                            ],
-                            additives: [
-                                {
-                                    descr: 'Geschmacksverstärker',
-                                    type: 'E'
-                                }
-                            ]
-                        },
-                        {
-                            rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
-                            title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
-                            img: 'main-dish',
-                            price: '3.80',
-                            allergies: [
-                                {
-                                    descr: 'Gluten',
-                                    type: 'G'
-                                },
-                                {
-                                    descr: 'Milch inkl. Laktose',
-                                    type: 'L'
-                                },
-                                {
-                                    descr: 'Selerie',
-                                    type: 'R'
-                                }
-                            ],
-                            additives: [
-                                {
-                                    descr: 'Künstliche Farbstoffe',
-                                    type: 'K'
-                                },
-                                {
-                                    descr: 'Geschmacksverstärker',
-                                    type: 'E'
-                                }
-                            ]
-                        },
-                        {
-                            rank: 4,
-                            date: '',
-                            loc: 'Dessert',
-                            title: 'Grießpudding',
-                            img: 'dessert',
-                            price: '1.00',
-                            allergies: [
-                                {
-                                    descr: 'Gluten',
-                                    type: 'G'
-                                },
-                                {
-                                    descr: 'Milch inkl. Laktose',
-                                    type: 'L'
-                                }
-                            ],
-                            additives: [
-                                {
-                                    descr: 'Künstliche Farbstoffe',
-                                    type: 'K'
-                                }
-                            ]
-                        }
-                    ]
-                },
                 '17611': {
                     'openingtime': {
                         'start': '11:30',
@@ -1037,7 +924,120 @@ export const state = {
                         }
                     ]
                 },
-                '17612': {
+                '17613': {
+                    'openingtime': {
+                        'start': '11:30',
+                        'end': '15:30'
+                    },
+                    'menu': [
+                        {
+                            rank: 1,
+                            loc: 'Beilage',
+                            title: 'Spätzle',
+                            img: 'side',
+                            price: '1.20',
+                            allergies: [
+                                {
+                                    descr: 'Gluten',
+                                    type: 'G'
+                                },
+                                {
+                                    descr: 'Milch inkl. Laktose',
+                                    type: 'L'
+                                },
+                                {
+                                    descr: 'Eier',
+                                    type: 'I'
+                                }
+                            ],
+                            additives: [
+                                {
+                                    descr: 'Künstliche Farbstoffe',
+                                    type: 'K'
+                                }
+                            ]
+                        },
+                        {
+                            rank: 2,
+                            loc: 'Mittag Menü',
+                            title: 'Schweineschnitzel Jägermeisterart',
+                            img: 'main-dish',
+                            price: '3.80',
+                            allergies: [
+                                {
+                                    descr: 'Gluten',
+                                    type: 'G'
+                                },
+                                {
+                                    descr: 'Milch inkl. Laktose',
+                                    type: 'L'
+                                }
+                            ],
+                            additives: [
+                                {
+                                    descr: 'Geschmacksverstärker',
+                                    type: 'E'
+                                }
+                            ]
+                        },
+                        {
+                            rank: 3,
+                            loc: 'Mittag Menü Vegetarisch',
+                            title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
+                            img: 'main-dish',
+                            price: '3.80',
+                            allergies: [
+                                {
+                                    descr: 'Gluten',
+                                    type: 'G'
+                                },
+                                {
+                                    descr: 'Milch inkl. Laktose',
+                                    type: 'L'
+                                },
+                                {
+                                    descr: 'Selerie',
+                                    type: 'R'
+                                }
+                            ],
+                            additives: [
+                                {
+                                    descr: 'Künstliche Farbstoffe',
+                                    type: 'K'
+                                },
+                                {
+                                    descr: 'Geschmacksverstärker',
+                                    type: 'E'
+                                }
+                            ]
+                        },
+                        {
+                            rank: 4,
+                            date: '',
+                            loc: 'Dessert',
+                            title: 'Grießpudding',
+                            img: 'dessert',
+                            price: '1.00',
+                            allergies: [
+                                {
+                                    descr: 'Gluten',
+                                    type: 'G'
+                                },
+                                {
+                                    descr: 'Milch inkl. Laktose',
+                                    type: 'L'
+                                }
+                            ],
+                            additives: [
+                                {
+                                    descr: 'Künstliche Farbstoffe',
+                                    type: 'K'
+                                }
+                            ]
+                        }
+                    ]
+                },
+                '17610': {
                     'openingtime': {
                         'start': '11:30',
                         'end': '15:30'
@@ -1154,7 +1154,7 @@ export const state = {
                         }
                     ]
                 },
-                '17613': {
+                '17612': {
                     'openingtime': {
                         'start': '11:30',
                         'end': '15:30'
@@ -1237,7 +1237,7 @@ export const state = {
                         }
                     ]
                 },
-                '17614': {
+                '17617': {
                     'openingtime': {
                         'start': '11:30',
                         'end': '15:30'
@@ -1396,7 +1396,7 @@ export const state = {
                         }
                     ]
                 },
-                '17617': {
+                '17618': {
                     'openingtime': {
                         'start': '11:30',
                         'end': '15:30'
@@ -1517,7 +1517,7 @@ export const state = {
                         }
                     ]
                 },
-                '17618': {
+                '17614': {
                     'openingtime': {
                         'start': '11:30',
                         'end': '15:30'
@@ -1616,7 +1616,7 @@ export const state = {
         {
             'title': 'Kantine Werk 22',
             'days': {
-                '17610': {
+                '17618': {
                     'openingtime': {
                         'start': '13:30',
                         'end': '16:30'
@@ -1729,7 +1729,7 @@ export const state = {
                         }
                     ]
                 },
-                '17611': {
+                '17617': {
                     'openingtime': {
                         'start': '13:30',
                         'end': '16:30'
@@ -1842,7 +1842,7 @@ export const state = {
                         }
                     ]
                 },
-                '17612': {
+                '17614': {
                     'openingtime': {
                         'start': '13:30',
                         'end': '16:30'
@@ -1959,7 +1959,7 @@ export const state = {
                         }
                     ]
                 },
-                '17613': {
+                '17610': {
                     'openingtime': {
                         'start': '13:30',
                         'end': '16:30'
@@ -2042,7 +2042,7 @@ export const state = {
                         }
                     ]
                 },
-                '17614': {
+                '17611': {
                     'openingtime': {
                         'start': '13:30',
                         'end': '16:30'
@@ -2201,7 +2201,7 @@ export const state = {
                         }
                     ]
                 },
-                '17617': {
+                '17612': {
                     'openingtime': {
                         'start': '13:30',
                         'end': '16:30'
@@ -2322,7 +2322,7 @@ export const state = {
                         }
                     ]
                 },
-                '17618': {
+                '17613': {
                     'openingtime': {
                         'start': '13:30',
                         'end': '16:30'
