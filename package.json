@@ -9,7 +9,7 @@
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "deploy": "node build/build.js & firebase deploy"
+    "deploy": "node build/build.js && firebase deploy"
   },
   "dependencies": {
     "lodash": "^4.17.5",
