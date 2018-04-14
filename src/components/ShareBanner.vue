@@ -1,12 +1,12 @@
 <template>
     <v-layout>
         <v-flex xs12 sm12>
-            <social-sharing url="https://vuejs.org/"
-                      title="The Progressive JavaScript Framework"
-                      description="Intuitive, Fast and Composable MVVM for building interactive interfaces."
-                      quote="Vue is a progressive framework for building user interfaces."
-                      hashtags="vuejs,javascript,framework"
-                      twitter-user="vuejs"
+            <social-sharing url="https://lunchapp-e3a2d.firebaseapp.com"
+                      title="The Lunch App"
+                      description="Provides detailed lunch descriptions including prices and additives for your cantine!"
+                      quote="Provides detailed lunch descriptions including prices and additives for your cantine!"
+                      hashtags="lunchapp"
+                      twitter-user="lunshapp"
                       inline-template>
                 <v-card>
                     <v-container fill-height fluid>
