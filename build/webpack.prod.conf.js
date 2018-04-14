@@ -105,6 +105,19 @@ const webpackConfig = merge(baseWebpackConfig, {
       staticFileGlobs: ['dist/**/*.{js,html,css}'],
       minify: true,
       stripPrefix: 'dist/',
+      runtimeCaching: [
+        {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\//,
+            handler: 'cacheFirst'
+        },
+        {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\//,
+            handler: 'cacheFirst'
+        },
+        {
+            urlPattern: /^https:\/\/code\.getmdl\.io\//,
+            handler: 'cacheFirst'
+        }],
       importScripts: [
         'static/custom-service-worker.js'
       ]
