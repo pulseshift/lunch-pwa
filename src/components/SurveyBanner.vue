@@ -16,7 +16,7 @@
                 </div>
             </v-card-title>
             <v-card-actions>
-                <v-btn flat v-on:click="closeSurveyBanner" color="grey">Später</v-btn>
+                <v-btn flat v-on:click="closeSurveyBanner()" color="grey">Später</v-btn>
                 <v-btn flat v-on:click="goToSurvey" color="red">Teilnehmen</v-btn>
             </v-card-actions>
             </v-card>
@@ -25,16 +25,12 @@
 </template>
 
 <script>
-import LunchList from './LunchList'
-
 export default {
     name: 'SurveyBanner',
+    props: ['closeSurveyBanner'],
     methods: {
         goToSurvey: function (event) {
             this.$router.push({name: 'Survey'})
-        },
-        closeSurveyBanner: function (event) {
-            LunchList.showSurveyBanner = false
         }
     }
 }

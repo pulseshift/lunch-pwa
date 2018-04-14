@@ -1,8 +1,8 @@
 <template>   
     <div class="scroll-container" v-show="!isEmtpy">     
         <v-container fluid grid-list-sm>
-            <SurveyBanner v-if="showSurveyBanner"/>  
-            <ShareBanner v-if="showShareBanner"/>
+            <SurveyBanner :closeSurveyBanner="closeSurveyBanner" v-show="showSurveyBanner"/>  
+            <ShareBanner :closeShareBanner="closeShareBanner" v-show="showShareBanner"/>
             <v-layout row wrap justify-center align-center>
                 <Lunch ref="lunch" v-for="menu in getMenu" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
             </v-layout>
@@ -78,6 +78,12 @@ export default {
                     child.show = false
                 }
             }
+        },
+        closeSurveyBanner: function () {
+            this.showSurveyBanner = false
+        },
+        closeShareBanner: function () {
+            this.showShareBanner = false
         }
     }
 }
