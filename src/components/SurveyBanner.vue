@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import LunchList from './LunchList'
+
 export default {
     name: 'SurveyBanner',
     methods: {
@@ -32,7 +34,7 @@ export default {
             this.$router.push({name: 'Survey'})
         },
         closeSurveyBanner: function (event) {
-            alert('todo: close')
+            LunchList.showSurveyBanner = false
         }
     }
 }

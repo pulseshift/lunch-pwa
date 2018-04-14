@@ -57,7 +57,7 @@
                         </div>
                     </v-card-title>
                     <v-card-actions>
-                        <v-btn flat @click="closeShareBanner()" color="grey">Später</v-btn>
+                        <v-btn flat v-on:click="closeShareBanner" color="grey">Später</v-btn>
                     </v-card-actions>
                 </v-card>
             </social-sharing>

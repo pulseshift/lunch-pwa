@@ -1,8 +1,8 @@
 <template>   
     <div class="scroll-container" v-show="!isEmtpy">     
         <v-container fluid grid-list-sm>
-            <SurveyBanner />  
-            <ShareBanner />
+            <SurveyBanner v-if="showSurveyBanner"/>  
+            <ShareBanner v-if="showShareBanner"/>
             <v-layout row wrap justify-center align-center>
                 <Lunch ref="lunch" v-for="menu in getMenu" v-bind:key="menu.id" :menu="menu" :closeOther="closeOther" />
             </v-layout>
@@ -19,6 +19,26 @@ export default {
     name: 'LunchList',
     components: { Lunch, SurveyBanner, ShareBanner },
     props: ['cantine', 'day'],
+    created: function () {
+        var randInt = Math.random()
+        if (navigator.onLine) {
+            if (randInt > 0.75) {
+                this.showSurveyBanner = true
+            } else if (randInt > 0.5) {
+                this.showShareBanner = true
+            }
+        } else {
+            if (randInt > 0.75) {
+                this.showShareBanner = true
+            }
+        }
+    },
+    data: function () {
+        return {
+            showSurveyBanner: false,
+            showShareBanner: false
+        }
+    },
     watch: {
         day: function () {
             this.closeOther(null)
