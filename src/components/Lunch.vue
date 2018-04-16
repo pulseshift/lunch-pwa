@@ -23,14 +23,14 @@
                     </v-flex>
                 </v-layout>
                 <div v-show="show">
-                    <v-layout row>
+                    <v-layout row v-if="showAllergy">
                         <v-flex xs12>
                             <div class="subheading center-text" >
                                 Enthält Allergene
                             </div>
                         </v-flex>
                     </v-layout>
-                    <v-layout v-for="allergy in menu.allergies" :key="allergy.descr" row>
+                    <v-layout v-if="showAllergy" v-for="allergy in menu.allergies" :key="allergy.descr" row>
                         <v-flex xs2>
                             <div class="body-2 center-text">
                                 {{ allergy.type }}
@@ -42,14 +42,14 @@
                             </div>
                         </v-flex>
                     </v-layout>
-                    <v-layout row>
+                    <v-layout v-if="showAdditive" row>
                         <v-flex xs12>
                             <div class="subheading center-text" >
                                 Enthält Zusätze
                             </div>
                         </v-flex>
                     </v-layout>
-                    <v-layout v-for="additive in menu.additives" :key="additive.descr" row>
+                    <v-layout v-if="showAdditive" v-for="additive in menu.additives" :key="additive.descr" row>
                         <v-flex xs2>
                             <div class="body-2 center-text">
                                 {{ additive.type }}
@@ -74,6 +74,13 @@ export default {
     computed: {
         imgSrc () {
             return '/static/lunch-icons/' + this.menu.img + '.png'
+        },
+        showAdditive: function () {
+            return (this.menu.additives.length > 0)
+        },
+        showAllergy: function () {
+            console.log('trst')
+            return (this.menu.allergies.length > 0)
         }
     },
     data: () => ({
