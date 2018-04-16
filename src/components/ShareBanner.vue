@@ -23,36 +23,24 @@
                                         twitter-user="lunchapp"
                                         inline-template>
                                         <div>
-                                        <v-flex xs3 order-sm2 order-md1>
                                             <network network="email">
                                                 <i class="fa fa-envelope"></i> <img height="45px" src="/static/img/icons/email.png">
                                             </network>
-                                        </v-flex>
-                                        <v-flex xs3 order-sm2 order-md2>
                                             <network network="facebook">
                                                 <i class="fa fa-facebook"></i> <img height="45px" src="/static/img/icons/facebook.svg">
                                             </network>
-                                        </v-flex>
-                                        <v-flex xs3 order-sm2 order-md2>
                                             <network network="whatsapp">
                                                 <i class="fa fa-whatsapp"></i> <img height="45px" src="/static/img/icons/whatsapp.svg">
                                             </network>
-                                        </v-flex>
-                                        <v-flex xs3 order-sm2 order-md2>
                                             <network network="linkedin">
                                                 <i class="fa fa-linkedin"></i> <img height="45px" src="/static/img/icons/linkedin.svg">
                                             </network>
-                                        </v-flex>
-                                        <v-flex xs3 order-sm2 order-md2>
                                             <network network="twitter">
                                                 <i class="fa fa-twitter"></i> <img height="45px" src="/static/img/icons/twitter.svg">
-                                            </network>
-                                        </v-flex>
-                                        <v-flex xs3 order-sm2 order-md2>
+                                            </network>                                        
                                             <network network="skype">
                                                 <i class="fa fa-skype"></i> <img height="45px" src="/static/img/icons/skype.svg">
                                             </network>
-                                    </v-flex>
                                         </div>
                                    </social-sharing>
                                 </v-layout>

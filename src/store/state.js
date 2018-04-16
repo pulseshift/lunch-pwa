@@ -41,8 +41,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Schweineschnitzel Jägermeisterart',
+                            loc: 'Mittagsmenü',
+                            title: 'Schweineschnitzel nach Jäger-Art',
                             img: 'main-dish',
                             price: '3.80',
                             allergies: [
@@ -64,7 +64,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
                             img: 'main-dish',
                             price: '3.80',
@@ -154,7 +154,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Schweineschnitzel Jägermeisterart',
                             img: 'main-dish',
                             price: '3.80',
@@ -177,7 +177,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
                             img: 'main-dish',
                             price: '3.80',
@@ -259,7 +259,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Putenoberkeulenbraten mit Rosmarinjus',
                             img: 'main-dish',
                             price: '3.80',
@@ -290,7 +290,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Veganes Thaicurry mit gebratenen Sojastreifen und frischem Wokgemüse',
                             img: 'main-dish',
                             price: '3.20',
@@ -366,7 +366,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Grünkohl mit Mettenden von Schwein und Rind',
                             img: 'main-dish',
                             price: '4.00',
@@ -393,7 +393,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Mediteranes Gemüse in Olivenöl und Basilikum-Joghurt',
                             img: 'main-dish',
                             price: '3.90',
@@ -459,7 +459,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Gegrillte Putenstreifen auf buntem Blattsalat mit gerösteten Walnüssen',
                             img: 'main-dish',
                             price: '4.20',
@@ -482,7 +482,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Weißwein-Risotto mit Frühlingszwieblen und Grana Padano',
                             img: 'main-dish',
                             price: '4.20',
@@ -568,7 +568,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Spagetthi Aioli',
                             img: 'main-dish',
                             price: '3.90',
@@ -630,8 +630,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Rinderfirkadelle mit Zwiebelsoße',
+                            loc: 'Mittagsmenü',
+                            title: 'Rinderfrikadelle mit Zwiebelsoße',
                             img: 'main-dish',
                             price: '4.20',
                             allergies: [
@@ -657,7 +657,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Gemüselasagne',
                             img: 'main-dish',
                             price: '4.20',
@@ -729,7 +729,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Hähnchenschenkel in Rotweinsauce mit Perlzwiebeln und Champignons',
                             img: 'main-dish',
                             price: '4.20',
@@ -760,7 +760,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Veganer Brokkoli-Dinkel-Auflauf mit Tomatensauce ',
                             img: 'main-dish',
                             price: '4.20',
@@ -846,8 +846,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Schweineschnitzel Jägermeisterart',
+                            loc: 'Mittagsmenü',
+                            title: 'Schweineschnitzel nach Jäger-Art',
                             img: 'main-dish',
                             price: '3.80',
                             allergies: [
@@ -869,7 +869,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
                             img: 'main-dish',
                             price: '3.80',
@@ -959,8 +959,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Schweineschnitzel Jägermeisterart',
+                            loc: 'Mittagsmenü',
+                            title: 'Schweineschnitzel nach Jäger-Art',
                             img: 'main-dish',
                             price: '3.80',
                             allergies: [
@@ -982,7 +982,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
                             img: 'main-dish',
                             price: '3.80',
@@ -1064,7 +1064,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Putenoberkeulenbraten mit Rosmarinjus',
                             img: 'main-dish',
                             price: '3.80',
@@ -1095,7 +1095,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Veganes Thaicurry mit gebratenen Sojastreifen und frischem Wokgemüse',
                             img: 'main-dish',
                             price: '3.20',
@@ -1171,7 +1171,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Grünkohl mit Mettenden von Schwein und Rind',
                             img: 'main-dish',
                             price: '4.00',
@@ -1198,7 +1198,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Mediteranes Gemüse in Olivenöl und Basilikum-Joghurt',
                             img: 'main-dish',
                             price: '3.90',
@@ -1264,7 +1264,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Gegrillte Putenstreifen auf buntem Blattsalat mit gerösteten Walnüssen',
                             img: 'main-dish',
                             price: '4.20',
@@ -1287,7 +1287,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Weißwein-Risotto mit Frühlingszwieblen und Grana Padano',
                             img: 'main-dish',
                             price: '4.20',
@@ -1373,7 +1373,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Spagetthi Aioli',
                             img: 'main-dish',
                             price: '3.90',
@@ -1435,8 +1435,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Rinderfirkadelle mit Zwiebelsoße',
+                            loc: 'Mittagsmenü',
+                            title: 'Rinderfrikadelle mit Zwiebelsoße',
                             img: 'main-dish',
                             price: '4.20',
                             allergies: [
@@ -1462,7 +1462,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Gemüselasagne',
                             img: 'main-dish',
                             price: '4.20',
@@ -1534,7 +1534,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Hähnchenschenkel in Rotweinsauce mit Perlzwiebeln und Champignons',
                             img: 'main-dish',
                             price: '4.20',
@@ -1565,7 +1565,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Veganer Brokkoli-Dinkel-Auflauf mit Tomatensauce ',
                             img: 'main-dish',
                             price: '4.20',
@@ -1651,8 +1651,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Schweineschnitzel Jägermeisterart',
+                            loc: 'Mittagsmenü',
+                            title: 'Schweineschnitzel nach Jäger-Art',
                             img: 'main-dish',
                             price: '3.80',
                             allergies: [
@@ -1674,7 +1674,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
                             img: 'main-dish',
                             price: '3.80',
@@ -1764,8 +1764,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Schweineschnitzel Jägermeisterart',
+                            loc: 'Mittagsmenü',
+                            title: 'Schweineschnitzel nach Jäger-Art',
                             img: 'main-dish',
                             price: '3.80',
                             allergies: [
@@ -1787,7 +1787,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Ravioli mit Steinpilzfüllung an Waldpilz-Kräuterrahmsauce ',
                             img: 'main-dish',
                             price: '3.80',
@@ -1869,7 +1869,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Putenoberkeulenbraten mit Rosmarinjus',
                             img: 'main-dish',
                             price: '3.80',
@@ -1900,7 +1900,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Veganes Thaicurry mit gebratenen Sojastreifen und frischem Wokgemüse',
                             img: 'main-dish',
                             price: '3.20',
@@ -1976,7 +1976,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Grünkohl mit Mettenden von Schwein und Rind',
                             img: 'main-dish',
                             price: '4.00',
@@ -2003,7 +2003,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Mediteranes Gemüse in Olivenöl und Basilikum-Joghurt',
                             img: 'main-dish',
                             price: '3.90',
@@ -2069,7 +2069,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Gegrillte Putenstreifen auf buntem Blattsalat mit gerösteten Walnüssen',
                             img: 'main-dish',
                             price: '4.20',
@@ -2092,7 +2092,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Weißwein-Risotto mit Frühlingszwieblen und Grana Padano',
                             img: 'main-dish',
                             price: '4.20',
@@ -2178,7 +2178,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Spagetthi Aioli',
                             img: 'main-dish',
                             price: '3.90',
@@ -2240,8 +2240,8 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
-                            title: 'Rinderfirkadelle mit Zwiebelsoße',
+                            loc: 'Mittagsmenü',
+                            title: 'Rinderfrikadelle mit Zwiebelsoße',
                             img: 'main-dish',
                             price: '4.20',
                             allergies: [
@@ -2267,7 +2267,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Gemüselasagne',
                             img: 'main-dish',
                             price: '4.20',
@@ -2339,7 +2339,7 @@ export const state = {
                         },
                         {
                             rank: 2,
-                            loc: 'Mittag Menü',
+                            loc: 'Mittagsmenü',
                             title: 'Hähnchenschenkel in Rotweinsauce mit Perlzwiebeln und Champignons',
                             img: 'main-dish',
                             price: '4.20',
@@ -2370,7 +2370,7 @@ export const state = {
                         },
                         {
                             rank: 3,
-                            loc: 'Mittag Menü Vegetarisch',
+                            loc: 'Mittagsmenü Vegetarisch',
                             title: 'Veganer Brokkoli-Dinkel-Auflauf mit Tomatensauce ',
                             img: 'main-dish',
                             price: '4.20',
