@@ -89,6 +89,12 @@ export default {
 </script>
 
 <style scoped>
+.headline {
+    overflow-wrap: break-word;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
 .price-tag {
     float: right;
 }
