@@ -11,7 +11,10 @@ var config = {
 firebase.initializeApp(config)
 
 const database = firebase.database()
+const messaging = firebase.messaging()
+messaging.usePublicVapidKey('BBZWUch3aJOv6dS7xYN7DPy0GD0K11tNxZY0YOPdtbiIXrVjTSfmkPYNw6vGBx5jvCII-ZVkRX52yUz2gbPq6Mg')
 
 export {
-    database
+    database,
+    messaging
 }

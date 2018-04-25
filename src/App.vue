@@ -3,22 +3,56 @@
 </template>
 
 <script>
-import {subscribe, isSubscribed} from './services'
+import {messaging} from './services'
 import postSubscription from './utils/postSubscription'
 
 export default {
     name: 'app',
     mixins: [postSubscription],
     mounted () {
-        isSubscribed()
-            .then(function (isSubscribed) {
-                if (!isSubscribed || Notification.permission !== 'granted') {
-                    subscribe()
-                        .then(function (subscription) {
-                            this.postSubscription(subscription)
-                        }.bind(this))
+        messaging.requestPermission().then(() => {
+            console.log('Permission')
+            messaging.getToken().then((currentToken) => {
+                console.log('Token:')
+                console.log(currentToken)
+                if (currentToken) {
+                    console.log('Post')
+                    this.postSubscription(currentToken)
+                } else {
+                    console.error('Error')
                 }
-            }.bind(this))
+            }).catch((err) => {
+                console.error(err)
+            })
+        }).catch((err) => {
+            console.error(err)
+        })
+        messaging.onTokenRefresh(() => {
+            messaging.getToken().then((refreshedToken) => {
+                this.postSubscription(refreshedToken)
+            }).catch((err) => {
+                console.error(err)
+            })
+        })
+        messaging.onMessage(function (payload) {
+            navigator.serviceWorker.getRegistration().then((registration) => {
+                const notificationTitle = payload.notification.title
+                const notificationOptions = {
+                    body: payload.notification.body
+                }
+                registration.showNotification(notificationTitle, notificationOptions)
+            })
+            console.log('Message received. ', payload)
+        })
+        // isSubscribed()
+        //     .then(function (isSubscribed) {
+        //         if (!isSubscribed || Notification.permission !== 'granted') {
+        //             subscribe()
+        //                 .then(function (subscription) {
+        //                     this.postSubscription(subscription)
+        //                 }.bind(this))
+        //         }
+        //     }.bind(this))
     }
 }
 </script>

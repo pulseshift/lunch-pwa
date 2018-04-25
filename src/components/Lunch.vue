@@ -79,7 +79,6 @@ export default {
             return (this.menu.additives.length > 0)
         },
         showAllergy: function () {
-            console.log('trst')
             return (this.menu.allergies.length > 0)
         }
     },

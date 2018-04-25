@@ -1,9 +1,10 @@
 import {isSubscribed, subscribe, unsubscribe} from './notifications'
-import {database} from './firebase'
+import {database, messaging} from './firebase'
 
 export {
     isSubscribed,
     subscribe,
     unsubscribe,
-    database
+    database,
+    messaging
 }

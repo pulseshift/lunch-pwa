@@ -117,10 +117,7 @@ const webpackConfig = merge(baseWebpackConfig, {
         {
             urlPattern: /^https:\/\/code\.getmdl\.io\//,
             handler: 'cacheFirst'
-        }],
-      importScripts: [
-        'static/custom-service-worker.js'
-      ]
+        }]
     })
   ]
 })
