@@ -14,7 +14,7 @@ npm install -g serve
 serve dist
 ```
 
-To trigger a notifications, the Postman collection (Firebase.postman_collection.json) in Postman and execute the request.
+To trigger a notifications, open the Postman collection (Firebase.postman_collection.json) in Postman and execute the request.
 
 ## Build Setup
 
