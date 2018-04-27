@@ -11,15 +11,11 @@ export default {
     mixins: [postSubscription],
     mounted () {
         messaging.requestPermission().then(() => {
-            console.log('Permission')
             messaging.getToken().then((currentToken) => {
-                console.log('Token:')
-                console.log(currentToken)
                 if (currentToken) {
-                    console.log('Post')
                     this.postSubscription(currentToken)
                 } else {
-                    console.error('Error')
+                    console.error('Error: Current Token empty')
                 }
             }).catch((err) => {
                 console.error(err)
@@ -42,7 +38,6 @@ export default {
                 }
                 registration.showNotification(notificationTitle, notificationOptions)
             })
-            console.log('Message received. ', payload)
         })
         // isSubscribed()
         //     .then(function (isSubscribed) {
