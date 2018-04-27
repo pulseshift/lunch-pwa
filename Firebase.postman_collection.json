@@ -1,0 +1,46 @@
+{
+	"id": "4abb9472-4f75-423c-86eb-403123c39461",
+	"name": "Firebase",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": null,
+	"order": [
+		"dab0968c-b414-43cb-88f2-ca5eb86b1a77"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "dab0968c-b414-43cb-88f2-ca5eb86b1a77",
+			"name": "Firebase Push",
+			"url": "https://fcm.googleapis.com/fcm/send",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "key=AAAAewzN1ig:APA91bE8KBmFuPZbCDc5oJBbxnTrTOunKCz6a1JWZow_4LroKRolb9RqPLHjEt8prCDlV-9kpfCfDpwkLpAGAC8vxpWmgGNGnbKrBoy3NcabhhWffLjdOCZf-_reLky9Dd5dhqiYQ5JI",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n    \"to\" : \"cf9TiqSSBCA:APA91bHh-7zTYjQGFKhNbq7TvzBKsh2KmyiCUsl5q3tgx8PbcFEHGAkwHgu72eKloO3ybzZTGofGcaoxJwNnr6NzREpZO3Asx3fcIVPllGNPIq2HkbIWmOa20AE0-MWaNpqd3_yIhtVK\",\n    \"notification\": {\n    \"body\": \"New Survey Ready!\",\n    \"title\": \"MyLunch\"\n\t}\n\n  }",
+			"headers": "Content-Type: application/json\nAuthorization: key=AAAAewzN1ig:APA91bE8KBmFuPZbCDc5oJBbxnTrTOunKCz6a1JWZow_4LroKRolb9RqPLHjEt8prCDlV-9kpfCfDpwkLpAGAC8vxpWmgGNGnbKrBoy3NcabhhWffLjdOCZf-_reLky9Dd5dhqiYQ5JI\n",
+			"pathVariables": {}
+		}
+	]
+}

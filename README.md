@@ -14,7 +14,7 @@ npm install -g serve
 serve dist
 ```
 
-To trigger a notifications, open [this](https://us-central1-lunchapp-e3a2d.cloudfunctions.net/notify) link in your browser (or make a curl request).
+To trigger a notifications, the Postman collection (Firebase.postman_collection.json) in Postman and execute the request.
 
 ## Build Setup
 
